@@ -1,13 +1,9 @@
 package newbank.server;
 
-public class EmployeeID {
-    private String key;
+import server.BankUserID;
 
+public class EmployeeID extends BankUserID {
     public EmployeeID(String key) {
-        this.key = key;
-    }
-
-    public String getKey() {
-        return key;
+        super(key);
     }
 }

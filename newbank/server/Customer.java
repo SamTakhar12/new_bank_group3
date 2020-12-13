@@ -1,15 +1,17 @@
 package newbank.server;
 
+import server.BankUser;
+
 import java.util.ArrayList;
 
-public class Customer {
+public class Customer extends BankUser {
 	private ArrayList<Account> accounts;
 	private Integer ID;
 	private String CustomerPassword;
 	
 	public Customer(Integer ID) {
+		super(ID);
 		accounts = new ArrayList<Account>();
-		this.ID = ID;
 	}
 
 	public Integer ID(){
